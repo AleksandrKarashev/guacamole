@@ -1,0 +1,131 @@
+            html, body {
+              margin: 0px;
+              padding: 0px;
+
+            }
+            body {
+              background-image: url("https://www.guacamolemex.com.br/assets/css/../images/unidades/background-guacamole-unidades.jpg");
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+
+            #container {
+              text-align:center;
+              position:relative;
+              width: 100vw;
+              height: 100vh;
+            }
+
+            .spanTop, .spanBottom {
+              position:absolute;
+              width:100%;
+              left:0;
+              display:block;
+              margin:0;
+              padding:0;
+            }
+
+            .spanTop {
+              top:0px;
+              height:13px;
+              background: url("https://www.guacamolemex.com.br/assets/css/../images/unidades/pattern-hero-head.png") 
+            }
+
+            .spanBottom {
+              bottom:0px;
+              height:33px;
+              background: url("https://www.guacamolemex.com.br/assets/css/../images/unidades/pattern-hero-footer.png");
+                          }
+
+            .lineDecor {
+              height:1.5px;
+              width:25px;
+              display:inline-block;
+              background:#d2d700;
+            } 
+
+            #headLogo {
+              position:relative;
+              top:25px;
+              margin: 0px auto 20px;
+              font-size:7px;
+              display:block;
+            }       
+
+
+            #icones {
+              margin: 0 auto;
+              max-width: 980px;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-gap: 30px;
+              list-style: none;
+            }
+
+            #icones li {
+              transition: all 0.5s;
+              opacity:0;
+            } 
+
+            #icones div {
+              cursor:pointer;
+              display:inline-block;
+            } 
+
+            #icones img {
+              display:inline-block;
+              height:120px;
+            }
+
+            #icones h2, #icones h3 {
+              margin:0;
+              padding:0;
+            }
+
+
+            @font-face {
+             font-family: "Old Press";
+             src: url(../fonts/OldPress.otf); 
+           }
+
+           h1,h2,h3, {
+            font-weight: normal;
+            line-height: 1;
+          }
+
+          h1, h3 {
+           font-family:'verdana';
+           color:yellow;
+         }
+
+         h1 {
+          letter-spacing: 0.3em;
+          position: relative;
+        }
+
+        h2 {
+         font-family: "Old Press";
+         font-size: 3.0em;
+         letter-spacing:0.05em;
+         color:#fff;
+       }
+       h3 {
+        font-size:0.7em;
+      }
+
+      @media (max-width:800px) {
+        #icones {
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          text-align:center;
+        }
+        #container {
+          height: auto;
+          padding:0 0 40px;
+        }
+      }
+
+  
